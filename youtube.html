@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YouTube風ページ</title>
+
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #ffffff;
+    padding: 20px;
+  }
+
+  /* YouTube風の動画枠 */
+  .video {
+    background: #000;
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+
+  /* タイトル風 */
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* 説明文風 */
+  .desc {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  /* 戻るボタン */
+  .back {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #007aff;
+    text-decoration: underline;
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<h2>YouTube風ページ</h2>
+
+<div class="video"></div>
+
+<div class="title">動画タイトル（ダミー）</div>
+<div class="desc">ここに動画の説明文を入れることができます。</div>
+
+<div class="back" onclick="goHome()">ホームに戻る</div>
+
+<script>
+  function goHome() {
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
