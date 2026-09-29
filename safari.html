@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Safari風ページ</title>
+
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #ffffff;
+    padding: 20px;
+  }
+
+  /* Safariの上部検索バー風 */
+  .bar {
+    background: #f2f2f7;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+  }
+
+  /* 戻るボタン */
+  .back {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #007aff;
+    text-decoration: underline;
+    text-align: center;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="bar">
+  <input type="text" placeholder="検索またはWebサイト名を入力">
+</div>
+
+<p>Safari風ページです。</p>
+
+<div class="back" onclick="goHome()">ホームに戻る</div>
+
+<script>
+  function goHome() {
+    window.location.href = "index.html";
+  }
+</script>
+
+</body>
+</html>
