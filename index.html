@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iPhone15 ホーム画面風</title>
+
+<style>
+  body {
+    margin: 0;
+    background: linear-gradient(#1c1c1e, #000);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 40px 20px 80px;
+    color: white;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+
+  .icon {
+    text-align: center;
+  }
+
+  .icon img {
+    width: 68px;
+    height: 68px;
+    border-radius: 22px;
+    transition: transform 0.18s ease;
+  }
+
+  .icon img:active {
+    transform: scale(1.18);
+  }
+
+  .icon p {
+    margin-top: 6px;
+    font-size: 12px;
+  }
+
+  .home-indicator {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background: #fff;
+    border-radius: 3px;
+    opacity: 0.35;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+  <div class="icon" onclick="openApp('google.html')">
+    <img src="google_icon.jpg" alt="Google">
+    <p>Google</p>
+  </div>
+
+  <div class="icon" onclick="openApp('safari.html')">
+    <img src="safari_icon.jpg" alt="Safari">
+    <p>Safari</p>
+  </div>
+
+  <div class="icon" onclick="openApp('youtube.html')">
+    <img src="youtube_icon.jpg" alt="YouTube">
+    <p>YouTube</p>
+  </div>
+
+  <div class="icon" onclick="openApp('settings.html')">
+    <img src="settings_icon.jpg" alt="設定">
+    <p>設定</p>
+  </div>
+</div>
+
+<div class="home-indicator"></div>
+
+<script>
+  function openApp(page) {
+    window.location.href = page;
+  }
+</script>
+
+</body>
+</html>
